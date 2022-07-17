@@ -2,6 +2,8 @@
 
 Author: Gamze Turan
 
+<img align="center" width="600" height="300" src='images/people_phone.jpg'>
+
 ## Overview
 
 I will examine the "SyriaTel Customer Churn" data in this study. The SyriaTel is a telecommunication company. To determine whether a customer will ("soon") discontinue doing business with Syria Tel is the goal of the study.
