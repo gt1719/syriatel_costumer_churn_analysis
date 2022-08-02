@@ -90,15 +90,15 @@ Then,splitting data into training, validation and test sets. First I split data 
 
 The shape of the splits:
 
-X_train shape =  (1999, 74)
-y_train shape =  (1999,)
-X_test shape =  (667, 74)
-y_test shape =  (667,)
-shape = (number of rows/entries, number of columns/variables)
+> X_train shape =  (1999, 74)
+> y_train shape =  (1999,)
+> X_test shape =  (667, 74)
+> y_test shape =  (667,)
+> shape = (number of rows/entries, number of columns/variables)
 
-Number of rows in train data = 1999
-Number of rows in validation data = 667
-Number of rows in test data = 667
+> Number of rows in train data = 1999
+> Number of rows in validation data = 667
+> Number of rows in test data = 667
 
 
 The next step is standardization and normalization . The data values have different ranges, so I did normalize/scale each variable in train and test data (X) before modeling.
@@ -111,14 +111,17 @@ precision:
 
 Number of True Positives / Number of Predicted Positives
 How precise our predictions are?
+
 recall:
 
 Nuber of True Positives / Number of Actual Total Positives
 What percentage of the classes we're interested in were actually captured by the model?
+
 accuracy:
 
 (Number of True Positives + Number of True Negatives) / (Number of Total Observations)
 Out of all the predictions our model made, what percentage were correct?
+
 f1-score:
 
 2 * (Precision * Recall) / (Precision + Recall)
@@ -240,7 +243,7 @@ Optimum parameter sets, with f1-score used for tuning:
 * Random Forest: Default
 * XGBoost: {'learning_rate': 0.1, 'max_depth': 6, 'min_child_weight': 1, 'n_estimators': 100
              
-<img align="center" width="600" height="300" src='images/ROC_Curve_Training.png'>
+<img align="center" width="600" height="500" src='images/ROC_Curve_Training.png'>
 
 Overall, XGBosst classifier has the best performance, according to test data Evaluation metrics. There is also shown the best Recall and F1-score.
 
@@ -249,33 +252,35 @@ My choice of the best model is XGBoost model.
 ## Summary
  
 Statistics of the Final Model in concise:
-It clearly identifies 78% of the real churning customer. 88% of the customers whose anticipated churn was captured by the algoritm definitely did so (clearly remember).(accuracy)The f1-score's Harmonic Mean of Precision and Recall is 83%.
+It clearly identifies 74% of the real churning customer. 83% of the customers whose anticipated churn was captured by the algoritm definitely did so (clearly remember).(accuracy)The f1-score's Harmonic Mean of Precision and Recall is 78%.
 
 The experimental database's identification number are:
 
 ### Unique identifiers:
 
-97 confirmed positives were found
+72 confirmed positives were found
 
-There are 696 genuie negatives.
+There are 556 genuine  negatives.
 
-13 false alarms were discovered.
+14 false alarms were discovered.
 
-28 erroneous alarms were discored.
+25 erroneous alarms were discovered.
 
-97 out of 125 customers who churn are successfully identified.
+72 out of 125 customers who churn are successfully identified.
 
 Client that churn have higher probability of having a foreign plan than others who stay users.
 Compared with regular users, churn customers are reluctant to get a voicemail subcription.
 Contray to incumbent users, churn clients have fewer voicemails(as a result of less voicemail plan).
 Users with churn generate more queries to customer service than do customer base.
 In contrast to continuous customers, churn users have greater total dat minutes.
-Business Recommendations:
-Enhance the global strategies to engage and attract customers.
 
-For greater satisfaction, revamp its helpdesk(customer service).
+## Business Recommendations:
 
-Accept a deal at discount with enough cumulative day moments.
+* Enhance the global strategies to engage and attract customers.
+
+* For greater satisfaction, revamp its helpdesk(customer service).
+
+* Accept a deal at discount with enough cumulative day moments.
 
 ## Next Step
 
