@@ -106,6 +106,8 @@ The next step is standardization and normalization . The data values have differ
 ## Evaluation 
 
  I will use several classifiers to model the data. I will check their performance using the evaluation metrics:
+ 
+<img align="center" width="600" height="400" src='images/Evaluation_metrics.png'>
 
 precision:
 
@@ -293,4 +295,16 @@ To facilitate a better understanding and familarity of each parameter exploited 
 Analyze the influence of additional hyperparameter.
 
 To evaluate performance of the model and to alter parameters, use a scaled f1 score that emphasizes recall more accuracy
+
+## Repository Structure 
+
+├── Data
+
+├── Deliverables
+
+├── images
+
+├── README.md
+
+└── syriatel_costumer_churn_analysis.ipynb
 
