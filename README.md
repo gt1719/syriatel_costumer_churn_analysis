@@ -278,7 +278,7 @@ In contrast to continuous customers, churn users have greater total dat minutes.
 
 ## Business Recommendations:
 
-* Enhance the global strategies to engage and attract customers.
+* Improve international plan to attract customers.
 
 * For greater satisfaction, revamp its helpdesk(customer service).
 
